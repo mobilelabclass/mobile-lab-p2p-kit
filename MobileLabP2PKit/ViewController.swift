@@ -8,6 +8,13 @@
 
 import UIKit
 
+////////////////////////////////////////////////////////////////////
+// NOTE: Update to unique name.
+// Service type must be a unique string, at most 15 characters long
+// and can contain only ASCII lowercase letters, numbers and hyphens.
+let ServiceType = "mobile-lab"
+
+
 class ViewController: UIViewController, UITextFieldDelegate, MultipeerServiceDelegate {
 
     @IBOutlet weak var inputTextField: UITextField!

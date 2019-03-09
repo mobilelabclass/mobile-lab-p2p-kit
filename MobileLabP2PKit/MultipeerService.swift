@@ -18,10 +18,6 @@ protocol MultipeerServiceDelegate {
 
 class MultipeerService : NSObject {
     
-    // Service type must be a unique string, at most 15 characters long
-    // and can contain only ASCII lowercase letters, numbers and hyphens.
-    private let ColorServiceType = "example-123"
-    
     private let serviceAdvertiser : MCNearbyServiceAdvertiser
     private let serviceBrowser : MCNearbyServiceBrowser
     
@@ -32,8 +28,8 @@ class MultipeerService : NSObject {
     init(dispayName: String) {
         let myPeerId = MCPeerID(displayName: dispayName)
 
-        self.serviceAdvertiser = MCNearbyServiceAdvertiser(peer: myPeerId, discoveryInfo: nil, serviceType: ColorServiceType)
-        self.serviceBrowser = MCNearbyServiceBrowser(peer: myPeerId, serviceType: ColorServiceType)
+        self.serviceAdvertiser = MCNearbyServiceAdvertiser(peer: myPeerId, discoveryInfo: nil, serviceType: ServiceType)
+        self.serviceBrowser = MCNearbyServiceBrowser(peer: myPeerId, serviceType: ServiceType)
         
         super.init()
 
