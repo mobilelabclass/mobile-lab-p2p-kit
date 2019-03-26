@@ -48,7 +48,6 @@ class MultipeerService : NSObject {
         self.serviceBrowser.stopBrowsingForPeers()
     }
 
-
     /////////////////////////////////////////////////////////////////////////
     // NOTE: Method to serialize msg and send to peers.
     func send(msg : String) {

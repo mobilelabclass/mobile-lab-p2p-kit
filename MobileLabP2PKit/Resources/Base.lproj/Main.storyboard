@@ -121,11 +121,18 @@
                                 <action selector="didTapRestartButton:" destination="BYZ-38-t0r" id="m0b-Yf-kzR"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Clear" id="hEd-yq-MWA">
-                            <connections>
-                                <action selector="didTapClearButton:" destination="BYZ-38-t0r" id="4Ah-Ug-aK5"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Clear" id="hEd-yq-MWA">
+                                <connections>
+                                    <action selector="didTapClearButton:" destination="BYZ-38-t0r" id="4Ah-Ug-aK5"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Disconnect" id="p6w-dK-iVm">
+                                <connections>
+                                    <action selector="didTapDisconnectButton:" destination="BYZ-38-t0r" id="svu-RB-RH1"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="connectionsTextView" destination="mcS-GW-fyF" id="nPU-oL-ltX"/>

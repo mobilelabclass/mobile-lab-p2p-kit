@@ -145,7 +145,10 @@ class ViewController: UIViewController, UITextFieldDelegate, MultipeerServiceDel
     @IBAction func didTapClearButton(_ sender: UIBarButtonItem) {
         textView.text = ""
     }
-    
+
+    @IBAction func didTapDisconnectButton(_ sender: UIBarButtonItem) {
+        multipeerService?.session.disconnect()
+    }
 
     //////////////////////////////////////////////////////////////////////////////////////////////
     // MARK: - MultipeerServiceDelegate
